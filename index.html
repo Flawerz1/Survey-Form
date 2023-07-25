@@ -6,25 +6,68 @@
     <title>My Developer Journey</title>
     <link rel="stylesheet" href="MainResources/styles.css">
 </head>
-<body>
-    <header>
+<body><main>
         <form class="form" action="" id="survey-form" >
             <img src="Resources/League-of-Legends-Logo.png" alt="League of legends logo">
             <label class="server-options" for="">REGIÓN:
-                <input type="radio">NA
-                <input type="radio">LAN
-                <input type="radio">LAS
-                <input type="radio">BRAZIL
+                <input name="region" type="radio">NA
+                <input name="region" type="radio">LAN
+                <input name="region" type="radio">LAS
+                <input name="region" type="radio">BRAZIL
             </label>
-        </form>
-    </header>
-    <main>
-        <form action="" id="survey-form"></form>
+    
             <h1 id="title">AQUI COMIENZA TU LEYENDA</h1>
             <p class="descripcion" id="description">PRIMERO INGRESA TU CORREO ELECTRÓNICO.</p>
             <section>
-                    <label for="email"><input placeholder="Ingresa tu correo electronico" type="email" id="correo" class="correo"></label>
+                    <label for="email" id="email-label">
+                        <input placeholder="Ingresa tu correo electrónico" type="email" id="email" class="correo" required>
+                    </label>
+                    <button class="prim-cont"><a href="#second-title">CONTINUAR</a></button>
             </section>
+            <select class="info" name="" id="dropdown">
+                <option value="""">INFORMACIÓN LEGAL</option>
+                <option value="1">SOPORTE</option>
+                <option value="2">POLÍTICA DE PRIVACIDAD</option>
+                <option value="3">TERMINOS DE USO</option>
+                <option value="4">PREFERENCIAS DE COOKIES</option>
+            </select>
+            <h2 id="second-title" >¿CUÁNDO NACISTE?</h2>
+            <label for="number" id="number-label">
+                <input class="number1" id="number" type="number" placeholder="DÍA" min="1" max="31">
+                <select class="number2" id="referrer">
+                    <option value="""">MES</option>
+                    <option value="1">ENERO</option>
+                    <option value="2">FEBRERO</option>
+                    <option value="3">MARZO</option>
+                    <option value="4">ABRIL</option>
+                    <option value="5">MAYO</option>
+                    <option value="6">JUNIO</option>
+                    <option value="7">JULIO</option>
+                    <option value="8">AGOSTO</option>
+                    <option value="9">SEPTIEMBRE</option>
+                    <option value="10">OCTUBRE</option>
+                    <option value="11">NOVIEMBRE</option>
+                    <option value="12">DICIEMBRE</option>
+                </select>
+                <input class="number3" type="number" placeholder="AÑO" min="1" max="12">
+            </label>
+            <button class="seg-cont" id="nacimiento"> <a href="#nacimiento">CONTINUAR</a></button>
+            <h3>POR ÚLTIMO, CREA UN NOMBRE DE USUARIO Y UNA CONTRASEÑA</h2>
+            <p class="descripcion2" id="description">ELEGIRÁS TU NOMBRE EN EL JUEGO DESPUÉS</p>
+            <label for="text" id="name-label">
+                <input placeholder="NOMBRE DE USUSARIO" type="text" id="name" class="text-name"" required>
+            </label>
+            <label for="text">
+                <input placeholder="CONTRASEÑA" type="password" id="name" class="text-name" required>
+            </label>
+            <label for="text" >
+                <input placeholder="CONFIRMA TU CONTRASEÑA" type="password" id="name" class="text-name" required>
+            </label>
+            <label class="checkbox" for="">
+                <input type="checkbox">Acepto los Términos de uso y que se procesen mis datos personales de acuerdo a lo establecido en Aviso de privacidad.
+            </label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button><input id="submit" type="submit" value="Submit"></button>
         </form>
     </main>
 </body>
