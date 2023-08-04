@@ -79,6 +79,7 @@ h1 {
     width: 240px;
 }
 
+
 a:hover{
     color: rgb(233, 206, 153);
 }
@@ -139,6 +140,7 @@ input[type="number"]{
 }
 
 h3{
+    padding-top: 216px;
     text-align: center;
     color: white;
     font-size: 3.5em;
@@ -165,4 +167,30 @@ h3{
     margin: 2em auto;
     text-align: left;
     width: 550px;
+}
+
+.texto{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(218, 169, 46);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: 1em;
+    width: 458px;
+    height: 41px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.submit{
+    background-color: black;
+    border-color: wheat;
+    margin: 2em auto ;
+    display: block;
+    height: 64px;
+    width: 240px;
+    text-decoration: none;
+    color: rgb(134, 104, 46);
 }

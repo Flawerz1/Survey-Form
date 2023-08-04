@@ -10,10 +10,10 @@
         <form class="form" action="" id="survey-form" >
             <img src="Resources/League-of-Legends-Logo.png" alt="League of legends logo">
             <label class="server-options" for="">REGIÓN:
-                <input name="region" type="radio">NA
-                <input name="region" type="radio">LAN
-                <input name="region" type="radio">LAS
-                <input name="region" type="radio">BRAZIL
+                <input name="region" type="radio" value="na">NA
+                <input name="region" type="radio" value="lan">LAN
+                <input name="region" type="radio" value="las">LAS
+                <input name="region" type="radio" value="brazil">BRAZIL
             </label>
     
             <h1 id="title">AQUI COMIENZA TU LEYENDA</h1>
@@ -51,23 +51,26 @@
                 </select>
                 <input class="number3" type="number" placeholder="AÑO" min="1" max="12">
             </label>
-            <button class="seg-cont" id="nacimiento"> <a href="#nacimiento">CONTINUAR</a></button>
-            <h3>POR ÚLTIMO, CREA UN NOMBRE DE USUARIO Y UNA CONTRASEÑA</h2>
+            <button class="seg-cont" id="nacimiento"> <a href="#ultim">CONTINUAR</a></button>
+            <h3 id="ultim">POR ÚLTIMO, CREA UN NOMBRE DE USUARIO Y UNA CONTRASEÑA</h3>
             <p class="descripcion2" id="description">ELEGIRÁS TU NOMBRE EN EL JUEGO DESPUÉS</p>
-            <label for="text" id="name-label">
-                <input placeholder="NOMBRE DE USUSARIO" type="text" id="name" class="text-name"" required>
+            <label for="text" id="name-label">.
+                <input placeholder="NOMBRE DE USUSARIO" type="text" id="name" class="text-name" required>
             </label>
-            <label for="text">
+            <label for="text">.
                 <input placeholder="CONTRASEÑA" type="password" id="name" class="text-name" required>
             </label>
             <label for="text" >
                 <input placeholder="CONFIRMA TU CONTRASEÑA" type="password" id="name" class="text-name" required>
             </label>
-            <label class="checkbox" for="">
-                <input type="checkbox">Acepto los Términos de uso y que se procesen mis datos personales de acuerdo a lo establecido en Aviso de privacidad.
+            <label class="checkbox">
+                <input type="checkbox" value="terms-and">Acepto los Términos de uso y que se procesen mis datos personales de acuerdo a lo establecido en Aviso de privacidad.
             </label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button><input id="submit" type="submit" value="Submit"></button>
+            <label class="checkbox">
+                <input type="checkbox" value="get-emails">Recibe correos ocasionales de Riot Games.
+            </label>
+            <textarea class="texto" name="" id="" cols="30" rows="10"></textarea>
+            <input class="submit" id="submit" type="submit" value="SUBMIT">
         </form>
     </main>
 </body>
